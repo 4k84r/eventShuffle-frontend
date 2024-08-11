@@ -1,0 +1,125 @@
+/* Global Styles */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  padding-left:1%;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin-top: 60px; /* Space for fixed header */
+}
+
+/* Header Styles */
+.app-header {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #61dafb;
+}
+
+/* Typography */
+h1, h2 {
+  color: #333;
+}
+
+/* Form Elements */
+input, button {
+  margin: 5px;
+  padding: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Custom DatePicker Styles */
+.date-picker-container {
+  display: inline-block;
+  width: auto;
+  position: relative;
+}
+
+.custom-datepicker {
+  width: 100%;
+  max-width: 300px;
+}
+
+.custom-datepicker .react-datepicker {
+  font-size: 14px;
+}
+
+.date-picker-overlay {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Detail Styles */
+.event-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.event-details p {
+  margin: 10px 0;
+}
